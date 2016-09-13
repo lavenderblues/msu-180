@@ -1,0 +1,38 @@
+/*************************************************************************
+*	PERSONAL PROGRAM                                                     *
+*	CSCI 180                                                             *
+*	DR. MENON                                                            *
+*	TO CALCULATE THE AREA AND CIRCUMFERENCE OF A CIRCLE GIVEN ITS RADIUS *
+**************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+	//declares variables
+	int circumference, area, radius;
+	float pi;
+
+
+	//explains program
+	printf("\nThis program outputs the area and circumference of a circle after being given its radius.");
+	printf("\nPress enter to continue");
+	getchar();
+
+
+	//gets user input of radius value(integer)
+	printf("\n\nPlease enter the radius of your CIRCLE:\n\n");
+	scanf("%d", &radius);
+
+
+	//computes values of area and circumference assuming pi = 3.141592
+	pi = 3.141592;
+	area = pi * (radius * radius);
+	circumference = 2 * (pi * radius);
+
+
+	//Outputs values of area and circumference and holds window open until user hits enter
+	printf("\n\n\n\The area of your circle is:  %d", area);
+	printf("\n\nThe circumference of your circle is: %d", circumference);
+	getchar(); getchar(); getchar();
+}
