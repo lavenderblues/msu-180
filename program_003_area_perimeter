@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    //Declare variables:
+    int area, perimeter, length, width;
+    
+    //Explain program and get user inputs:
+    printf("This program allows for you to input the length and width of a rectangle, and returns the values of\nits area and perimeter.\n");
+   
+    printf("\n\nPlease input the length of the rectangle: ");
+    scanf("%d", &length);
+    
+    printf("\n\nPlease input the width of the rectangle: ");
+    scanf("%d", &width);
+    
+    //Calculate values of output:
+    area = width * length;
+    perimeter = 2 * (length + width);
+    
+    //Output values:
+    printf("The area of your rectangle is %d, and the perimeter is %d", area, perimeter);
+    
+    //allow user to view results before closing the window:
+    getchar(); getchar();
+
+    return 0;
+}
